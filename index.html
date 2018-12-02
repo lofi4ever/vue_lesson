@@ -7,6 +7,23 @@
 	<title>Document</title>
 </head>
 <body>
-	test new
+	<div id="app">
+		<header class="main-header">
+			<div class="wrapper">
+				<div class="main-header__title">{{title}}</div>
+			</div>
+		</header>
+		<main id="main-main">
+			<div class="wrapper">
+				<div class="page-title">{{pageTitle}}</div>
+				<div class="page-description">{{pageDescription}}</div>
+				<a :href="linkToGithub">Me on GitHub</a>
+			</div>
+		</main>
+	</div>
+
+	<link rel="stylesheet" href="css/main.css">
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="js/app.js"></script>
 </body>
 </html>
